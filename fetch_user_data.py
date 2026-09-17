@@ -1,6 +1,6 @@
 import requests
 
-home_url = "http://api.github.com/users/"
+home_url = "https://api.github.com/users/"
 
 user_name = input("Enter your GitHub Username:\t")
 

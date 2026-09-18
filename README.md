@@ -5,3 +5,9 @@ This project uses GitHub's API to fetch the user's data, and recent activities.
 
 ## Using the CLI application
 install requirements by running the command - *pip install -r requirements.txt*
+
+## Run the project
+
+*python fetch_user_data.py*
+
+> This project was made following the instructions from - https://roadmap.sh/projects/github-user-activity

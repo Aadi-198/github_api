@@ -25,8 +25,9 @@ activity_response = requests.get(activity_url)
 
 if activity_response.status_code == 200:
     activity_data = activity_response.json()
+    activity_number = int(input("Enter the number of recent activities to be fetched: \t"))
     print(f"Fetching {user_name}'s activity data ...\n")
-    recent_activities = activity_data[:3]
+    recent_activities = activity_data[:activity_number]
     for count_activity in recent_activities:
         activity_id = count_activity.get('id')
         activity_type = count_activity.get('type')
